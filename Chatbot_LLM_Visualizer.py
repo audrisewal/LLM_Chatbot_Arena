@@ -1684,7 +1684,7 @@
     "#if __name__ == '__main__':\n",
     "    #app.run_server(debug=True)\n",
     "if __name__ == '__main__':\n",
-    "    app.run_server(debug=True, port=8051)"
+    "    app.run_server(debug=True, host="0.0.0.0", port=10000)"
    ]
   }
  ],
