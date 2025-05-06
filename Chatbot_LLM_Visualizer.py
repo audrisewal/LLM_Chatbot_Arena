@@ -1583,7 +1583,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 30,
+   "execution_count": 32,
    "id": "f2eb6a43-514e-40db-9168-883eacf17b46",
    "metadata": {},
    "outputs": [
@@ -1602,7 +1602,7 @@
        "        "
       ],
       "text/plain": [
-       "<IPython.lib.display.IFrame at 0x1314976b0>"
+       "<IPython.lib.display.IFrame at 0x131acae10>"
       ]
      },
      "metadata": {},
@@ -1681,11 +1681,20 @@
     "        return f\"Predicted Domain: {domain}\"\n",
     "    return \"\"\n",
     "\n",
-    "#if __name__ == '__main__':\n",
-    "    #app.run_server(debug=True)\n",
+    "import os\n",
+    "\n",
     "if __name__ == '__main__':\n",
-    "    app.run_server(debug=True, host=\"0.0.0.0\", port=10000)"
+    "    port = int(os.environ.get(\"PORT\", 10000))  # Render sets PORT at runtime\n",
+    "    app.run_server(debug=False, host=\"0.0.0.0\", port=port)\n"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "beea09bc-1e93-4e2a-b1bd-7a513c2e5ae9",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
