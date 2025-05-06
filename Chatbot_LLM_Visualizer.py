@@ -1583,7 +1583,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 29,
+   "execution_count": 30,
    "id": "f2eb6a43-514e-40db-9168-883eacf17b46",
    "metadata": {},
    "outputs": [
@@ -1594,7 +1594,7 @@
        "        <iframe\n",
        "            width=\"100%\"\n",
        "            height=\"650\"\n",
-       "            src=\"http://127.0.0.1:8051/\"\n",
+       "            src=\"http://0.0.0.0:10000/\"\n",
        "            frameborder=\"0\"\n",
        "            allowfullscreen\n",
        "            \n",
@@ -1602,7 +1602,7 @@
        "        "
       ],
       "text/plain": [
-       "<IPython.lib.display.IFrame at 0x12a659b20>"
+       "<IPython.lib.display.IFrame at 0x1314976b0>"
       ]
      },
      "metadata": {},
@@ -1684,7 +1684,7 @@
     "#if __name__ == '__main__':\n",
     "    #app.run_server(debug=True)\n",
     "if __name__ == '__main__':\n",
-    "    app.run_server(debug=True, host="0.0.0.0", port=10000)"
+    "    app.run_server(debug=True, host=\"0.0.0.0\", port=10000)"
    ]
   }
  ],
